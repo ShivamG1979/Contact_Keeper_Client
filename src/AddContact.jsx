@@ -16,7 +16,7 @@ const AddContact = ({id,setId}) => {
   useEffect(() => {
     const fetchData = async () => {
       const api = await axios.get(
-        `http://localhost:1000/api/${id}`,
+        `https://contact-keeper-api-saqj.onrender.com/api/${id}`,
         {
           headers:{
             "Content-Type":"application/json",
@@ -50,14 +50,14 @@ try{
 if(!id){
 
   const api = await axios.post(
-    "http://localhost:1000/api/addcontact",
+    "https://contact-keeper-api-saqj.onrender.com/api/addcontact",
     
     {
       name,gmail,phone,ctype
   },{
       headers:{
         "Content-Type":"application/json"
-      },
+      }, 
       withCredentials:true,
       
     });
@@ -75,7 +75,7 @@ if(!id){
       setId("")
 } else{
   const api = await axios.put(
-    `http://localhost:1000/api/${id}`,
+    `https://contact-keeper-api-saqj.onrender.com/api/${id}`,
     
     {
       name,gmail,phone,ctype

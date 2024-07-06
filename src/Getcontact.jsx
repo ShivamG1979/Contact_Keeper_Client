@@ -12,7 +12,7 @@ const GetContact = ({ id, setId }) => {
 
   const deleteContact = async (id) => {
     try {
-      await axios.delete(`http://localhost:1000/api/${id}`, {
+      await axios.delete(`https://contact-keeper-api-saqj.onrender.com/api/${id}`, {
         headers: {
           'Content-Type': 'application/json',
         },
@@ -27,7 +27,7 @@ const GetContact = ({ id, setId }) => {
   const fetchData = async () => {
     try {
       setIsLoader(true);
-      const response = await axios.get('http://localhost:1000/api/getcontacts', {
+      const response = await axios.get('https://contact-keeper-api-saqj.onrender.com/api/getcontacts', {
         headers: {
           'Content-Type': 'application/json',
         },
