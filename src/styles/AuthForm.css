@@ -1,0 +1,109 @@
+/* authForm.css */
+
+/* Centering the form */
+.auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 10px;
+}
+
+/* Form Card */
+.auth-form-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 30px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Form Header */
+.auth-form-header {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #4c6ef5;
+  margin-bottom: 20px;
+}
+
+/* Submit Button */
+.auth-form-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #4c6ef5;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Form Group Styles */
+.auth-form-group {
+  margin-bottom: 20px;
+}
+
+.auth-form-label {
+  display: block;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.auth-form-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.auth-form-input:focus {
+  border-color: #4c6ef5;
+  outline: none;
+}
+
+/* Error message styles */
+.auth-form-error {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* Link Styles */
+a {
+  color: #4c6ef5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.return-home-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.return-home-btn {
+  font-size: 1rem;
+  color: #4c6ef5;
+  text-decoration: none;
+  background-color: #f4f7fc;
+  padding: 10px 20px;
+  border: 1px solid #4c6ef5;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.return-home-btn:hover {
+  background-color: #e0e6ff;
+  text-decoration: underline;
+}

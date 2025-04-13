@@ -1,0 +1,132 @@
+/* ContactList.css */
+.contact-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.loading-text, .empty-text {
+  text-align: center;
+  margin: 15px 0;
+  color: #666;
+}
+
+.contact-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.contact-card-body {
+  padding: 16px;
+}
+
+.contact-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.contact-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.contact-img-placeholder {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  color: #757575;
+}
+
+.contact-name {
+  margin: 0 0 5px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.contact-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.badge-primary {
+  background-color: #3498db;
+}
+
+.badge-success {
+  background-color: #2ecc71;
+}
+
+.contact-details {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.contact-icon {
+  margin-right: 8px;
+  color: #555;
+}
+
+.contact-actions {
+  display: flex;
+  margin-top: 15px;
+  gap: 8px;
+}
+
+.action-button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid;
+  background-color: transparent;
+}
+
+.edit-button {
+  border-color: #3498db;
+  color: #3498db;
+}
+
+.edit-button:hover {
+  background-color: #3498db;
+  color: white;
+}
+
+.delete-button {
+  border-color: #e74c3c;
+  color: #e74c3c;
+}
+
+.delete-button:hover {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.favorite-button {
+  border-color: #f39c12;
+  color: #f39c12;
+}
+
+.favorite-button:hover {
+  background-color: #f39c12;
+  color: white;
+}
+
+.star-icon.favorite {
+  color: #f39c12;
+}
