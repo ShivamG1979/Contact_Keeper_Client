@@ -15,15 +15,20 @@ const ContactPage = ({ user, logout }) => {
 
   const fetchContacts = async () => {
     setLoading(true);
+  
+    // 🔍 Add this line to log the token
+    const token = localStorage.getItem('authToken');
+    console.log('Auth token in ContactPage:', token);
+  
     try {
       let endpoint = '/api/getcontacts';
-      
+  
       if (activeTab === 'favorites') {
         endpoint = '/api/favorites/all';
-      } else if (activeTab !== 'all') {
+      } else if (activeTab !== 'all') { 
         endpoint = `/api/category/${activeTab}`;
       }
-      
+  
       const res = await axios.get(endpoint);
       if (res.data.success) {
         setContacts(res.data.contacts);
@@ -31,7 +36,6 @@ const ContactPage = ({ user, logout }) => {
     } catch (error) {
       console.error('Error fetching contacts:', error);
       if (error.response && error.response.status === 401) {
-        // Unauthorized - token might be expired
         localStorage.removeItem('authToken');
         navigate('/login');
       }
@@ -39,6 +43,7 @@ const ContactPage = ({ user, logout }) => {
       setLoading(false);
     }
   };
+  
 
   useEffect(() => {
     fetchContacts();
