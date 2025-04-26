@@ -70,7 +70,7 @@ const Home = () => {
       {/* Header */}
       <header className="header">
       <div className="logo">
-  <img src="/public/keeper.jpg" alt="Contact Keeper Logo" className="logo-image" />
+  <img src="/keeper.jpg" alt="Contact Keeper Logo" className="logo-image" />
   <h2>Contact Keeper</h2>
 </div>
 
