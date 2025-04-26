@@ -9,6 +9,7 @@ import './App.css';
 
 // Set axios defaults
 axios.defaults.baseURL = 'https://contact-keeper-api-43jp.onrender.com';
+// axios.defaults.baseURL = 'http://localhost:1000';
 axios.defaults.withCredentials = true;
  
 // Add axios interceptor for authentication

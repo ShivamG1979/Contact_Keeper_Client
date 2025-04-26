@@ -18,7 +18,7 @@ const ContactPage = ({ user, logout }) => {
   
     // 🔍 Add this line to log the token
     const token = localStorage.getItem('authToken');
-    console.log('Auth token in ContactPage:', token);
+   
   
     try {
       let endpoint = '/api/getcontacts';
